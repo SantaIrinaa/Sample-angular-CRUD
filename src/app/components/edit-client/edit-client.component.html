@@ -1,0 +1,29 @@
+<div class="edit-client">
+    <h1>Modification des informations du client</h1>
+
+    <form (submit)="onUpdateClient()">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="client.name" required>
+
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" [(ngModel)]="client.type" required>
+
+        <label for="address">Adresse:</label>
+        <input type="text" id="address" name="address" [(ngModel)]="client.address" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="client.email" required>
+
+        <label for="city">Ville:</label>
+        <input type="text" id="city" name="city" [(ngModel)]="client.city" required>
+
+        <label for="postalCode">Code postal:</label>
+        <input type="text" id="postalCode" name="postalCode" [(ngModel)]="client.postalCode" required>
+
+        <label for="postalCode">Edition User:</label>
+        <input type="text" id="editionUser" name="editionUser" [(ngModel)]="client.editionUser" required>
+
+        <button type="submit">Confirmer</button>
+        <button type="button" (click)="cancel()">Annuler</button>
+    </form>
+</div>

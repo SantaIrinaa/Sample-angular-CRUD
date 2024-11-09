@@ -1,0 +1,28 @@
+<div class="add-client">
+    <h2>Ajouter un nouveau client</h2>
+    <form (submit)="addClient()">
+      <label for="name">Nom:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="newClient.name" required>
+
+      <label for="type">Type:</label>
+      <input type="text" id="type" name="type" [(ngModel)]="newClient.type" required>
+
+      <label for="address">Adresse:</label>
+      <input type="text" id="address" name="address" [(ngModel)]="newClient.address" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="newClient.email" required>
+
+      <label for="city">Ville:</label>
+      <input type="text" id="city" name="city" [(ngModel)]="newClient.city" required>
+
+      <label for="postalCode">Code postal:</label>
+      <input type="text" id="postalCode" name="postalCode" [(ngModel)]="newClient.postalCode" required>
+
+      <label for="postalCode">Creation User:</label>
+      <input type="text" id="creationUser" name="creationUser" [(ngModel)]="newClient.creationUser" required>
+
+      <button type="submit">Ajouter</button>
+      <button type="button" (click)="cancel()">Annuler</button>
+    </form>
+  </div>

@@ -1,0 +1,54 @@
+.edit-client {
+    font-family: 'Arial', sans-serif;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-client h1 {
+color: #333;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.edit-client form {
+display: flex;
+flex-direction: column;
+}
+
+.edit-client label {
+margin-bottom: 5px;
+}
+
+.edit-client input[type="text"],
+.edit-client input[type="email"] {
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.edit-client button {
+padding: 10px;
+margin: 5px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.edit-client button[type="submit"] {
+background-color: #4CAF50;
+color: white;
+}
+
+.edit-client button[type="button"] {
+background-color: #f44336;
+color: white;
+}
+
+.edit-client button:hover {
+opacity: 0.8;
+}

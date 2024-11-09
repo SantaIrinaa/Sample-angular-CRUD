@@ -1,0 +1,28 @@
+<div class="client-list">
+  <h2>Liste des clients</h2>
+  
+  <div class="header">
+    <button (click)="navigateToAddClient()"><b>Ajouter nouveau client</b></button>
+    <input type="text" [(ngModel)]="searchTerm" (keyup)="applyFilter()" placeholder="Rechercher">
+  </div>
+  
+  <div class="container">
+    <ul>
+      <li *ngFor="let client of filteredClients">
+        <div class="client-card">
+          <p>ID: <b>{{client.id}}</b></p>
+          <p>Name: <b>{{client.name}}</b></p>
+          <p>Type: <b>{{client.type}}</b></p>
+          <p>Adresse: <b>{{client.address}}</b></p>
+          <p>Email: <b>{{client.email}}</b></p>
+          <p>Ville: <b>{{client.city}}</b></p>
+          <p>Code Postale: <b>{{client.postalCode}}</b></p>
+          <p>
+            <button class="edit" (click)="navigateToEditClient(client.id!)"><b>Modifier</b></button>
+            <button class="delete" (click)="navigateToDeleteClient(client.id!)"><b>Supprimer</b></button>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
